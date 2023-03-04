@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/output.css" rel="stylesheet">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="nav">
+        <div class="container flex items-center justify-between h-16 md:h-20">
+            <h1 class="relative z-30 font-semibold text-2xl">
+                Lenny Zanotelli
+            </h1>
+            <div class="flex items-center flex-row-reverse md:flex-row gap-3 md:gap-12">
+                <!-- Menu List -->
+                <ul id="menu" class="nav-menus translate-y-[-200%] md:translate-y-0">
+                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#Projects">Projects</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </ul>
+
+                <!-- Mobile Menu Button -->
+                <button id="toggle-menu" class="relative z-30 p-2 md:hidden dark:invert">
+                    <img src="./assets/images/icon-menu.svg" alt="Menu">
+                </button>
+
+                <!-- Toggle Theme -->
+                <button id="toggle-theme" class="relative z-30 dark:invert">
+                    <img class="md:opacity-70 w-7 md:mt-1" src="./assets/images/icon-dark-mode.svg" alt="theme">
+
+                </button>
+
+
+
+
+            </div>
+        </div>
+    </nav>
+
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
