@@ -52,6 +52,78 @@
             font-semibold
             border-b-4 border-transparent
             hover:border-primary
+    }
+    .home-section {
+        @apply
+            grid items-center
+            grid-cols-1 md:grid-cols-2
+            pt-28 md:pt-0
+            md:h-screen
+            md:overflow-hidden
+    }
+    .btn-primary {
+        @apply
+            bg-primary
+            hover:brightness-110
+            font-bold text-white
+            px-4 py-2.5
+            rounded shadow-lg
+    }
+    .conainer-hero-image {
+        @apply
+            bg-primary
+            rounded-md md:rounded-none
+            h-60 md:h-full
+            overflow-hidden
+            order-1 md:order-2
+    }
 
+    .skill {
+        @apply
+            relative
+            flex items-center justify-center
+            bg-white dark:bg-primary-gray
+            w-28 h-28
+            rounded-full cursor-pointer
+
+    }
+    .skill::before {
+        content: attr(data-text);
+        @apply
+            absolute top-full
+            opacity-100 md:opacity-0
+            w-max px-3 py-2 mt-3
+            bg-white dark:bg-primary-gray
+            rounded md:shadow-md transition
+
+    }
+    .skill:hover::before {
+        @apply opacity-100
+    }
+
+    .projects-heading {
+        @apply
+            text-4xl md:text-5xl
+            text-center
+            text-primary md:text-left
+            font-bold
+            mb-8 md:mb-12
+    }
+    .project-card {
+        @apply
+            flex flex-col md:flex-row
+            items-center
+            bg-white dark:bg-primary-gray
+            rounded overflow-hidden
+    }
+
+    .project-link {
+        @apply
+            flex items-center gap-2
+            py-4 py-2
+            w-max hover:brightness-110
+    }
+    .contact-link {
+        @apply p-4 rounded-full hover:brightness-110
     }
 }
