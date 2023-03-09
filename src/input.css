@@ -69,13 +69,13 @@
             px-4 py-2.5
             rounded shadow-lg
     }
-    .conainer-hero-image {
+    .container-hero-image {
         @apply
             bg-primary
             rounded-md md:rounded-none
             h-60 md:h-full
             overflow-hidden
-            order-1 md:order-2
+            order-first md:order-2
     }
 
     .skill {
@@ -120,7 +120,7 @@
     .project-link {
         @apply
             flex items-center gap-2
-            py-4 py-2
+            py-4 px-2
             w-max hover:brightness-110
     }
     .contact-link {
