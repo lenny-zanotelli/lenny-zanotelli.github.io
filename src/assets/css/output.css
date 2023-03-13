@@ -1266,10 +1266,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgb(238 238 238 / var(--tw-bg-opacity));
 }
 
-.bg-primary\/60{
-  background-color: rgb(0 173 181 / 0.6);
-}
-
 .bg-transparent{
   background-color: transparent;
 }
@@ -1293,18 +1289,8 @@ h1, h2, h3, h4, h5, h6 {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.from-primary\/60{
-  --tw-gradient-from: rgb(0 173 181 / 0.6);
-  --tw-gradient-to: rgb(0 173 181 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .to-primary{
   --tw-gradient-to: #00ADB5;
-}
-
-.to-primary\/0{
-  --tw-gradient-to: rgb(0 173 181 / 0);
 }
 
 .object-cover{
@@ -1351,6 +1337,11 @@ h1, h2, h3, h4, h5, h6 {
 .py-0{
   padding-top: 0px;
   padding-bottom: 0px;
+}
+
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .py-2{
@@ -1591,11 +1582,6 @@ h1, h2, h3, h4, h5, h6 {
   color: rgb(238 238 238 / var(--tw-text-opacity));
 }
 
-.dark .dark\:invert{
-  --tw-invert: invert(100%);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 @media (min-width: 768px){
   .md\:static{
     position: static;
@@ -1609,22 +1595,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 3rem;
   }
 
-  .md\:mt-1{
-    margin-top: 0.25rem;
-  }
-
-  .md\:hidden{
-    display: none;
-  }
-
-  .md\:h-20{
-    height: 5rem;
-  }
-
-  .md\:h-64{
-    height: 16rem;
-  }
-
   .md\:h-full{
     height: 100%;
   }
@@ -1633,33 +1603,8 @@ h1, h2, h3, h4, h5, h6 {
     height: 100vh;
   }
 
-  .md\:w-1\/2{
-    width: 50%;
-  }
-
-  .md\:w-1\/3{
-    width: 33.333333%;
-  }
-
-  .md\:w-2\/3{
-    width: 66.666667%;
-  }
-
-  .md\:w-5\/6{
-    width: 83.333333%;
-  }
-
-  .md\:w-64{
-    width: 16rem;
-  }
-
   .md\:w-auto{
     width: auto;
-  }
-
-  .md\:translate-y-0{
-    --tw-translate-y: 0px;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .md\:grid-cols-2{
@@ -1670,16 +1615,8 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: row;
   }
 
-  .md\:gap-10{
-    gap: 2.5rem;
-  }
-
   .md\:gap-12{
     gap: 3rem;
-  }
-
-  .md\:gap-20{
-    gap: 5rem;
   }
 
   .md\:overflow-hidden{
@@ -1711,37 +1648,13 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
   }
 
-  .md\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .md\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
   .md\:text-5xl{
     font-size: 3rem;
     line-height: 1;
   }
 
-  .md\:text-7xl{
-    font-size: 4.5rem;
-    line-height: 1;
-  }
-
-  .md\:text-lg{
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
   .md\:opacity-0{
     opacity: 0;
-  }
-
-  .md\:opacity-70{
-    opacity: 0.7;
   }
 
   .md\:shadow-md{

@@ -1,7 +1,6 @@
 // Toogle Menu
 
 const toggleMenu = document.getElementById('toggle-menu');
-console.log(toggleMenu);
 const toggleMenuIcon = toggleMenu.querySelector('img');
 const menuElem = document.getElementById('menu');
 
@@ -23,9 +22,9 @@ for(const navlink of navLinks) {
 function changeMenuIcon() {
     const isContainTranslate = menuElem.classList.contains('translate-y-[-200%]')
     if(!isContainTranslate) {
-        toggleMenuIcon.src = './assets/images/icon-menu-close.svg'
+        toggleMenuIcon.src = 'src/assets/images/icon/icon-menu-close.svg'
     }else{
-        toggleMenuIcon.src = './assets/images/icon-menu.svg'
+        toggleMenuIcon.src = 'src/assets/images/icon/icon-menu.svg'
     }
 }
 
@@ -38,9 +37,10 @@ toggleThemeIcon.addEventListener('click', ()=>{
     html.classList.toggle('dark');
     const isDark = html.classList.contains('dark');
     if(!isDark){
-        toggleThemeIcon.src = './assets/images/icon-dark-mode.svg'
+        toggleThemeIcon.src = 'src/assets/images/icon/icon-dark-mode.svg'
+        // TODO : changer aussi les icones du Contact/des projets et de l'icone en haut
     }else{
-        toggleThemeIcon.src = './assets/images/icon-light-mode.svg'
+        toggleThemeIcon.src = 'src/assets/images/icon/icon-light-mode.svg'
     }
 })
 

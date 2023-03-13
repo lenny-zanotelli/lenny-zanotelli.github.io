@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./assets/css/output.css" rel="stylesheet">
+    <link href="/src/assets/css/output.css" rel="stylesheet">
     <title>My Portfolio</title>
 </head>
 
@@ -26,11 +26,11 @@
                 </ul>
                 <!-- Mobile Menu Button -->
                 <button id="toggle-menu" class="relative z-30 p-2 md:hidden dark:invert">
-                    <img src="./assets/images/icon-menu.svg" alt="Menu">
+                    <img src="src/assets/images/icon/icon-menu.svg" alt="Menu">
                 </button>
                 <!-- Toggle Theme -->
                 <button id="toggle-theme" class="relative z-30 dark:invert">
-                    <img class="md:opacity-70 w-7 md:mt-1" src="./assets/images/icon-dark-mode.svg" alt="theme">
+                    <img class="md:opacity-70 w-7 md:mt-1" src="src/assets/images/icon/icon-dark-mode.svg" alt="theme">
 
                 </button>
             </div>
@@ -46,18 +46,23 @@
                     Hello,
                 </h2>
                 <h2 class="text-5xl md:text-7xl font-bold mt-2">
-                    Je suis <span class="text-primary">Lenny</span>
+                    Je suis <span class="text-primary">Lenny Zanotelli</span>
                 </h2>
                 <h3 class="text-2xl md:text-3xl font-bold opacity-70 mt-5 mb-10">
                     Web Developer
                 </h3>
-                <a href="#projects" class="btn-primary">
-                    Voici mes projets
-                </a>
+                <div class="flex gap-2">
+                    <a href="#projects" class="btn-primary">
+                        Voici mes projets
+                    </a>
+                    <a href="/src/assets/CV.pdf" download="CV" class="btn-primary">
+                        Télécharger mon CV
+                    </a>
+                </div>
             </div>
             <div class="container-hero-image">
                 <img class="w-full h-full object-cover opacity-90 object-center"
-                    src="./assets/images/hero-banner-cat.jpg" alt="profile" />
+                    src="src/assets/images/hero-banner-cat.jpg" alt="profile" />
             </div>
         </section>
 
@@ -67,7 +72,7 @@
             <!-- Description -->
             <div class="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20">
                 <div class="rounded-full w-48 md:w-64 h-48 md:h-64 overflow-hidden bg-primary">
-                    <img class="w-full h-full object-cover opacity-90" src="./assets/images/profile-pic.jpg"
+                    <img class="w-full h-full object-cover opacity-90" src="src/assets/images/profile-pic.jpg"
                         alt="profile pic">
                 </div>
                 <div class="w-full md:w-1/2 text-base md:text-lg text-center md:text-left">
@@ -93,25 +98,25 @@
                 </h2>
                 <div class="flex flex-wrap items-center justify-center gap-24 md:gap-12">
                     <div class="skill" data-text="Experience 3 years">
-                        <img class="w-16" src="./assets/images/html.svg" alt="html">
+                        <img class="w-16" src="src/assets/images/stack-icon/html.svg" alt="html">
                     </div>
                     <div class="skill" data-text="Experience 3 years">
-                        <img class="w-16" src="./assets/images/css.svg" alt="css">
+                        <img class="w-16" src="src/assets/images/stack-icon/css.svg" alt="css">
                     </div>
                     <div class="skill" data-text="Experience 3 years">
-                        <img class="w-16" src="./assets/images/js.svg" alt="js">
+                        <img class="w-16" src="src/assets/images/stack-icon/js.svg" alt="js">
                     </div>
                     <div class="skill" data-text="Experience 3 years">
-                        <img class="w-16" src="./assets/images/nodejs.svg" alt="nodejs">
+                        <img class="w-16" src="src/assets/images/stack-icon/nodejs.svg" alt="nodejs">
                     </div>
                     <div class="skill" data-text="Experience 3 years">
-                        <img class="w-16" src="./assets/images/psql.svg" alt="js">
+                        <img class="w-16" src="src/assets/images/stack-icon/psql.svg" alt="js">
                     </div>
                     <div class="skill" data-text="Experience 3 years">
-                        <img class="w-16" src="./assets/images/react.svg" alt="react">
+                        <img class="w-16" src="src/assets/images/stack-icon/react.svg" alt="react">
                     </div>
                     <div class="skill" data-text="Experience 3 years">
-                        <img class="w-16" src="./assets/images/tailwindcss.svg" alt="js">
+                        <img class="w-16" src="src/assets/images/stack-icon/tailwindcss.svg" alt="js">
                     </div>
                 </div>
             </div>
@@ -139,7 +144,7 @@
                 <!-- Project List -->
                 <li class="project-card">
                     <div class="w-full md:w-1/3 h-60">
-                        <img class="h-full w-full object-cover" src="./assets/images/pokedex-app.png" alt="pokedex">
+                        <img class="h-full w-full object-cover" src="src/assets/images/pokedex-app.png" alt="pokedex">
                     </div>
                     <div class="w-full md:w-2/3 p-5">
                         <h2 class="text-3xl font-bold mb-3">
@@ -149,12 +154,12 @@
                             tempora officia quibusdam explicabo magnam cumque ipsum consectetur reiciendis odit, id
                             minus soluta quo modi non praesentium temporibus?</p>
                         <div class="mt-8 font-semibold text-white flex items-center gap-2">
-                            <a href="#" class="project-link bg-primary">
-                                <img class="w-5 h-5" src="./assets/images/github.svg" alt="github">
+                            <a href="#" target="_blank" class="project-link bg-primary">
+                                <img class="w-5 h-5" src="src/assets/images/stack-icon/github.svg" alt="github">
                                 github
                             </a>
-                            <a href="#" class="project-link bg-primary-gray dark:bg-primary-black">
-                                <img class="w-5 h-5" src="./assets/images/github.svg" alt="website">
+                            <a href="#" target="_blank" class="project-link bg-primary-gray dark:bg-primary-black">
+                                <img class="w-5 h-5" src="src/assets/images/stack-icon/web.svg" alt="website">
                                 website
                             </a>
                         </div>
@@ -163,7 +168,7 @@
 
                 <li class="project-card">
                     <div class="w-full md:w-1/3 h-60">
-                        <img class="h-full w-full object-cover" src="./assets/images/pokedex-app.png" alt="pokedex">
+                        <img class="h-full w-full object-cover" src="src/assets/images/pokedex-app.png" alt="pokedex">
                     </div>
                     <div class="w-full md:w-2/3 p-5">
                         <h2 class="text-3xl font-bold mb-3">
@@ -173,12 +178,12 @@
                             tempora officia quibusdam explicabo magnam cumque ipsum consectetur reiciendis odit, id
                             minus soluta quo modi non praesentium temporibus?</p>
                         <div class="mt-8 font-semibold text-white flex items-center gap-2">
-                            <a href="#" class="project-link bg-primary">
-                                <img class="w-5 h-5" src="./assets/images/github.svg" alt="github">
+                            <a href="#" target="_blank" class="project-link bg-primary">
+                                <img class="w-5 h-5" src="src/assets/images/stack-icon/github.svg" alt="github">
                                 github
                             </a>
-                            <a href="#" class="project-link bg-primary-gray dark:bg-primary-black">
-                                <img class="w-5 h-5" src="./assets/images/github.svg" alt="website">
+                            <a href="#" target="_blank" class="project-link bg-primary-gray dark:bg-primary-black">
+                                <img class="w-5 h-5" src="src/assets/images/stack-icon/web.svg" alt="website">
                                 website
                             </a>
                         </div>
@@ -187,7 +192,8 @@
 
                 <li class="project-card">
                     <div class="w-full md:w-1/3 h-60">
-                        <img class="h-full w-full object-cover" src="./assets/images/pokedex-app.png" alt="pokedex">
+                        <img class="h-full w-full object-cover" src="src/assets/images/pokedex-app.png" target="_blank"
+                            alt="pokedex">
                     </div>
                     <div class="w-full md:w-2/3 p-5">
                         <h2 class="text-3xl font-bold mb-3">
@@ -198,11 +204,13 @@
                             minus soluta quo modi non praesentium temporibus?</p>
                         <div class="mt-8 font-semibold text-white flex items-center gap-2">
                             <a href="#" class="project-link bg-primary">
-                                <img class="w-5 h-5" src="./assets/images/github.svg" alt="github">
+                                <img class="w-5 h-5" src="src/assets/images/stack-icon/github.svg" target="_blank"
+                                    alt="github">
                                 github
                             </a>
                             <a href="#" class="project-link bg-primary-gray dark:bg-primary-black">
-                                <img class="w-5 h-5" src="./assets/images/github.svg" alt="website">
+                                <img class="w-5 h-5" src="src/assets/images/stack-icon/web.svg" target="_blank"
+                                    alt="website">
                                 website
                             </a>
                         </div>
@@ -220,14 +228,14 @@
                 Contact
             </h2>
             <div class="flex flex-wrap justify-center gap-5 md:gap-10">
-                <a href="#" class="contact-link bg-blue-500">
-                    <img src="./assets/images/github.svg" alt="linkedin">
+                <a href="https://www.linkedin.com/in/lenny-zanotelli/" target="_blank" class="contact-link">
+                    <img src="/src/assets/images/stack-icon/linkedin.svg" alt="linkedin">
                 </a>
-                <a href="#" class="contact-link bg-pink-500">
-                    <img src="./assets/images/github.svg" alt="github">
+                <a href="https://github.com/lenny-zanotelli" target="_blank" class="contact-link">
+                    <img src="/src/assets/images/stack-icon//github.svg" alt="github">
                 </a>
-                <a href="#" class="contact-link bg-green-400">
-                    <img src="./assets/images/github.svg" alt="email">
+                <a href="mailto:lenny.zanotelli24@gmail.com" target="_blank" class="contact-link">
+                    <img src="/src/assets/images/stack-icon/mail.svg" alt="email">
                 </a>
             </div>
         </section>
@@ -237,7 +245,7 @@
 
     </footer>
 
-    <script src="./assets/js/index.js"></script>
+    <script src="src/assets/js/index.js"></script>
 </body>
 
 </html>
