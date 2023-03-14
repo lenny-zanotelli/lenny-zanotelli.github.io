@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/src/assets/css/output.css" rel="stylesheet">
-    <title>My Portfolio</title>
+    <link href="./src/assets/css/output.css" rel="stylesheet">
+    <title>Lenny Zanotelli - React Developper</title>
 </head>
 
 <body>
@@ -19,19 +19,18 @@
             <div class="flex items-center flex-row-reverse md:flex-row gap-3 md:gap-12">
                 <!-- Menu List -->
                 <ul id="menu" class="nav-menus translate-y-[-200%] md:translate-y-0">
-                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#home">Accueil</a>
                     <a class="nav-link" href="#about">A Propos</a>
                     <a class="nav-link" href="#projects">Projets</a>
                     <a class="nav-link" href="#contact">Contact</a>
                 </ul>
                 <!-- Mobile Menu Button -->
-                <button id="toggle-menu" class="relative z-30 p-2 md:hidden dark:invert">
+                <button id="toggle-menu" class="relative z-30 p-2 md:hidden">
                     <img src="src/assets/images/icon/icon-menu.svg" alt="Menu">
                 </button>
                 <!-- Toggle Theme -->
                 <button id="toggle-theme" class="relative z-30 dark:invert">
-                    <img class="md:opacity-70 w-7 md:mt-1" src="src/assets/images/icon/icon-dark-mode.svg" alt="theme">
-
+                    <img class="md:opacity-70 w-7 md:mt-1" src="src/assets/images/icon/icon-dark.svg" alt="theme">
                 </button>
             </div>
         </div>
@@ -61,8 +60,8 @@
                 </div>
             </div>
             <div class="container-hero-image">
-                <img class="w-full h-full object-cover opacity-90 object-center"
-                    src="src/assets/images/hero-banner-cat.jpg" alt="profile" />
+                <img class="w-full h-full object-cover opacity-80 object-center" src="src/assets/images/hero-banner.jpg"
+                    alt="profile" />
             </div>
         </section>
 
@@ -77,46 +76,70 @@
                 </div>
                 <div class="w-full md:w-1/2 text-base md:text-lg text-center md:text-left">
                     <h2 class="text-primary font-bold text-2xl md:text-3xl mb-3">
-                        Hello, Je suis Lenny Zanotelli
+                        A propos de moi
                     </h2>
                     <p class="mb-3 opacity-80">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit atque tempore animi maiores
-                        nostrum, quaerat dicta, aliquam deserunt esse sed mollitia iste voluptatem assumenda quia
-                        doloremque porro dolor eum molestias!
+                        Développeur Web passionné par la création de solutions ayant un impatch social positif.
+                        J'ai une forte appétence pour les projets open-source qui encourage la collaboration et la
+                        transparence.
+                    </p>
+                    <p class="mb-3 opacity-80">
+                        Avec une expérience d'autodidacte, je suis actuellement en formation intensive avec O'Clock.
+                        Les différents projets fait en formation et en autodidacte sont disponible sur mon Github.
+                    </p>
+                    <p class="mb-3 opacity-80">
+                        Je crois fermement que le web se doit d'être inclusif et accessible à chaque personne.
+                        C'est pourquoi, je m'efforce de créer des applications respectant les normes d'accessibilité et
+                        qui offrent uen expérence optimale à tous·tes les utilisateur·ices.
                     </p>
                     <p class="opacity-80">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatibus ad fugit!
-                        Nulla quia aut corporis, amet eligendi vero officiis. Sed eveniet perferendis distinctio,
-                        veritatis officia esse doloribus impedit nostrum.
+                        Si vous cherchez un développeur web qui combine des compétences techniques solides avec une
+                        passion pour les projets à impact social. N'hésitez pas à me
+                        contacter pour discuter de votre projet.
                     </p>
                 </div>
             </div>
             <!-- My Skills -->
             <div class="mt-32 text-center">
                 <h2 class="text-primary text-3xl md:text-4xl font-bold mb-14">
-                    My Skills
+                    Mes Technos
                 </h2>
-                <div class="flex flex-wrap items-center justify-center gap-24 md:gap-12">
-                    <div class="skill" data-text="Experience 3 years">
+                <div class="flex flex-wrap items-center justify-center gap-24 md:gap-20">
+                    <div class="skill" data-text="HTML5">
                         <img class="w-16" src="src/assets/images/stack-icon/html.svg" alt="html">
                     </div>
-                    <div class="skill" data-text="Experience 3 years">
+                    <div class="skill" data-text="CSS3">
                         <img class="w-16" src="src/assets/images/stack-icon/css.svg" alt="css">
                     </div>
-                    <div class="skill" data-text="Experience 3 years">
+                    <div class="skill" data-text="JavaScript">
                         <img class="w-16" src="src/assets/images/stack-icon/js.svg" alt="js">
                     </div>
-                    <div class="skill" data-text="Experience 3 years">
-                        <img class="w-16" src="src/assets/images/stack-icon/nodejs.svg" alt="nodejs">
+                    <div class="skill" data-text="Tailwindcss">
+                        <img class="w-16" src="src/assets/images/stack-icon/tailwindcss.svg" alt="tailwindcss">
                     </div>
-                    <div class="skill" data-text="Experience 3 years">
-                        <img class="w-16" src="src/assets/images/stack-icon/psql.svg" alt="js">
+                    <div class="skill" data-text="Bootstrap">
+                        <img class="w-16" src="src/assets/images/stack-icon/bootstrap.svg" alt="bootstrap">
                     </div>
-                    <div class="skill" data-text="Experience 3 years">
+                    <div class="skill" data-text="Sass">
+                        <img class="w-16" src="src/assets/images/stack-icon/sass.svg" alt="Sass">
+                    </div>
+                    <div class="skill" data-text="React.js">
                         <img class="w-16" src="src/assets/images/stack-icon/react.svg" alt="react">
                     </div>
-                    <div class="skill" data-text="Experience 3 years">
-                        <img class="w-16" src="src/assets/images/stack-icon/tailwindcss.svg" alt="js">
+                    <div class="skill" data-text="Node.js">
+                        <img class="w-16" src="src/assets/images/stack-icon/nodejs.svg" alt="nodejs">
+                    </div>
+                    <div class="skill" data-text="Postgres SQL">
+                        <img class="w-16" src="src/assets/images/stack-icon/psql.svg" alt="psql">
+                    </div>
+                    <div class="skill" data-text="MySQL">
+                        <img class="w-16" src="src/assets/images/stack-icon/mysql.svg" alt="mysql">
+                    </div>
+                    <div class="skill" data-text="MongoDB">
+                        <img class="w-16" src="src/assets/images/stack-icon/mongodb.svg" alt="mongodb">
+                    </div>
+                    <div class="skill" data-text="Express">
+                        <img class="w-16" src="src/assets/images/stack-icon/express.svg" alt="express">
                     </div>
                 </div>
             </div>
@@ -221,20 +244,20 @@
 
     </main>
     <!-- Footer section -->
-    <footer class="w-full text-center mt-40 bg-white dark:bg-primary-gray">
+    <footer class="w-full text-center mt-4 bg-cyan-50/80 dark:bg-primary-gray">
         <!-- Contact Section -->
         <section id="contact" class="flex flex-col gap-12 justify-center items-center py-20">
             <h2 class="text-4xl md:text-5xl font-bold text-primary">
                 Contact
             </h2>
             <div class="flex flex-wrap justify-center gap-5 md:gap-10">
-                <a href="https://www.linkedin.com/in/lenny-zanotelli/" target="_blank" class="contact-link">
+                <a href="https://www.linkedin.com/in/lenny-zanotelli/" target="_blank" class="contact-link bg-blue-500">
                     <img src="/src/assets/images/stack-icon/linkedin.svg" alt="linkedin">
                 </a>
-                <a href="https://github.com/lenny-zanotelli" target="_blank" class="contact-link">
+                <a href="https://github.com/lenny-zanotelli" target="_blank" class="contact-link bg-slate-500">
                     <img src="/src/assets/images/stack-icon//github.svg" alt="github">
                 </a>
-                <a href="mailto:lenny.zanotelli24@gmail.com" target="_blank" class="contact-link">
+                <a href="mailto:lenny.zanotelli24@gmail.com" target="_blank" class="contact-link bg-red-500">
                     <img src="/src/assets/images/stack-icon/mail.svg" alt="email">
                 </a>
             </div>
@@ -245,7 +268,7 @@
 
     </footer>
 
-    <script src="src/assets/js/index.js"></script>
+    <script src="/src/assets/js/index.js"></script>
 </body>
 
 </html>

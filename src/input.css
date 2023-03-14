@@ -19,8 +19,8 @@
     body {
         font-family: 'Nunito', sans-serif;
         @apply
-            bg-primary-white dark:bg-primary-black
-            text-primary-black dark:text-primary-white
+        bg-white dark:bg-primary-black
+        text-primary-black dark:text-primary-white
     }
     h1, h2, h3, h4, h5, h6 {
         font-family: 'Open-Sans', sans-serif;
@@ -31,7 +31,7 @@
     .nav {
         @apply
             fixed top-0 left-0 z-40
-            bg-white/80 dark:bg-primary-gray/80
+            bg-cyan-50/80 dark:bg-primary-gray/80
             py-3 md:py-0
             w-full backdrop-blur
     }
@@ -124,6 +124,7 @@
             w-max hover:brightness-110
     }
     .contact-link {
-        @apply p-4 rounded-full hover:brightness-110
+        @apply 
+        p-4 rounded-full hover:brightness-110
     }
 }
