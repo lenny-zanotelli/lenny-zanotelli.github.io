@@ -19,7 +19,8 @@ module.exports = {
           DEFAULT: '#00555C',
           black: '#222831',
           gray: '#393E46',
-          white: '#EEEEEE'
+          white: '#EEEEEE',
+          darkDefault: '#b8d9db'
         }
       }
     },

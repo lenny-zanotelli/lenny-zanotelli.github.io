@@ -669,6 +669,11 @@ h1, h2, h3, h4, h5, h6 {
   border-color: rgb(0 85 92 / var(--tw-border-opacity));
 }
 
+.dark .nav-link:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(184 217 219 / var(--tw-border-opacity));
+}
+
 .home-section{
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -789,6 +794,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(0 85 92 / var(--tw-text-opacity));
+}
+
+.dark .projects-heading{
+  --tw-text-opacity: 1;
+  color: rgb(184 217 219 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px){
@@ -1167,9 +1177,32 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgb(34 40 49 / var(--tw-bg-opacity));
 }
 
+.dark .dark\:bg-primary-darkDefault\/60{
+  background-color: rgb(184 217 219 / 0.6);
+}
+
 .dark .dark\:bg-primary-gray{
   --tw-bg-opacity: 1;
   background-color: rgb(57 62 70 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-gradient-to-r{
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.dark .dark\:from-primary-darkDefault\/60{
+  --tw-gradient-from: rgb(184 217 219 / 0.6);
+  --tw-gradient-to: rgb(184 217 219 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.dark .dark\:to-primary-darkDefault\/0{
+  --tw-gradient-to: rgb(184 217 219 / 0);
+}
+
+.dark .dark\:text-primary-darkDefault{
+  --tw-text-opacity: 1;
+  color: rgb(184 217 219 / var(--tw-text-opacity));
 }
 
 .dark .dark\:invert{

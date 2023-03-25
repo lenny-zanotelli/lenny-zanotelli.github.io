@@ -45,7 +45,7 @@
                     Hello,
                 </h2>
                 <h2 class="text-5xl md:text-7xl font-bold mt-2">
-                    Je suis <span class="text-primary">Lenny Zanotelli</span>
+                    Je suis <span class="text-primary dark:text-primary-darkDefault">Lenny Zanotelli</span>
                 </h2>
                 <h3 class="text-2xl md:text-3xl font-bold opacity-70 mt-5 mb-10">
                     Web Developer
@@ -75,7 +75,7 @@
                         alt="profile pic">
                 </div>
                 <div class="w-full md:w-1/2 text-base md:text-lg text-center md:text-left">
-                    <h2 class="text-primary font-bold text-2xl md:text-3xl mb-3">
+                    <h2 class="text-primary dark:text-primary-darkDefault font-bold text-2xl md:text-3xl mb-3">
                         A propos de moi
                     </h2>
                     <p class="mb-3 opacity-80">
@@ -101,7 +101,7 @@
             </div>
             <!-- My Skills -->
             <div class="mt-32 text-center">
-                <h2 class="text-primary text-3xl md:text-4xl font-bold mb-14">
+                <h2 class="text-primary dark:text-primary-darkDefault text-3xl md:text-4xl font-bold mb-14">
                     Mes Technos
                 </h2>
                 <div class="flex flex-wrap items-center justify-center gap-24 md:gap-20">
@@ -147,20 +147,22 @@
 
         <!-- DOTS -->
 
-        <div class="flex items-center justify-between gap-3 w-full">
-            <div class="bg-primary/60 h-3 w-4"></div>
-            <div class="bg-primary/60 h-3 w-4"></div>
-            <div class="bg-primary/60 h-3 w-4"></div>
-            <div class="bg-primary/60 h-3 w-4"></div>
-            <div class="bg-primary/60 h-3 w-4"></div>
-            <div class="bg-primary/60 h-3 w-4"></div>
-            <div class="bg-primary/60 h-3 w-4"></div>
-            <div class="bg-gradient-to-r from-primary/60 to-primary/0 flex-grow h-3"></div>
+        <div class="flex items-center justify-between gap-3 w-full ">
+            <div class="bg-primary/60 h-3 w-4 dark:bg-primary-darkDefault/60"></div>
+            <div class="bg-primary/60 dark:bg-primary-darkDefault/60 h-3 w-4"></div>
+            <div class="bg-primary/60 dark:bg-primary-darkDefault/60 h-3 w-4"></div>
+            <div class="bg-primary/60 dark:bg-primary-darkDefault/60 h-3 w-4"></div>
+            <div class="bg-primary/60 h-3 w-4 dark:bg-primary-darkDefault/60"></div>
+            <div class="bg-primary/60 h-3 w-4 dark:bg-primary-darkDefault/60"></div>
+            <div class="bg-primary/60 h-3 w-4 dark:bg-primary-darkDefault/60"></div>
+            <div
+                class="bg-gradient-to-r from-primary/60 to-primary/0 flex-grow h-3 dark:bg-gradient-to-r dark:from-primary-darkDefault/60 dark:to-primary-darkDefault/0">
+            </div>
         </div>
 
         <section id="projects" class="pt-32">
             <h2 class="projects-heading">
-                Mes Projets
+                Quelques Projets...
 
             </h2>
             <ul class="w-full md:w-5/6 space-y-10 py-5">
@@ -177,65 +179,67 @@
                             tempora officia quibusdam explicabo magnam cumque ipsum consectetur reiciendis odit, id
                             minus soluta quo modi non praesentium temporibus?</p>
                         <div class="mt-8 font-semibold text-white flex items-center gap-2">
-                            <a href="#" target="_blank" class="project-link bg-primary">
+                            <a href="https://github.com/lenny-zanotelli/pokedex-app" target="_blank"
+                                class="project-link bg-primary">
                                 <img class="w-5 h-5" src="src/assets/images/stack-icon/github.svg" alt="github">
                                 github
                             </a>
-                            <a href="#" target="_blank" class="project-link bg-primary-gray dark:bg-primary-black">
+                            <!-- <a href="#" target="_blank" class="project-link bg-primary-gray dark:bg-primary-black">
                                 <img class="w-5 h-5" src="src/assets/images/stack-icon/web.svg" alt="website">
                                 website
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                 </li>
 
                 <li class="project-card">
                     <div class="w-full md:w-1/3 h-60">
-                        <img class="h-full w-full object-cover" src="src/assets/images/pokedex-app.png" alt="pokedex">
+                        <img class="h-full w-full object-cover" src="src/assets/images/kanban.png" alt="kanban">
                     </div>
                     <div class="w-full md:w-2/3 p-5">
                         <h2 class="text-3xl font-bold mb-3">
-                            Pokedex App
+                            Tableau Kanban dynamique
                         </h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat odio dolor obcaecati
                             tempora officia quibusdam explicabo magnam cumque ipsum consectetur reiciendis odit, id
                             minus soluta quo modi non praesentium temporibus?</p>
                         <div class="mt-8 font-semibold text-white flex items-center gap-2">
-                            <a href="#" target="_blank" class="project-link bg-primary">
+                            <a href="https://github.com/lenny-zanotelli/tableau-kanban-API-front" target="_blank"
+                                class="project-link bg-primary">
                                 <img class="w-5 h-5" src="src/assets/images/stack-icon/github.svg" alt="github">
                                 github
                             </a>
-                            <a href="#" target="_blank" class="project-link bg-primary-gray dark:bg-primary-black">
+                            <!-- <a href="#" target="_blank" class="project-link bg-primary-gray dark:bg-primary-black">
                                 <img class="w-5 h-5" src="src/assets/images/stack-icon/web.svg" alt="website">
                                 website
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                 </li>
 
                 <li class="project-card">
                     <div class="w-full md:w-1/3 h-60">
-                        <img class="h-full w-full object-cover" src="src/assets/images/pokedex-app.png" target="_blank"
-                            alt="pokedex">
+                        <img class="h-full w-full object-cover" src="src/assets/images/ofig.png" target="_blank"
+                            alt="ofig">
                     </div>
                     <div class="w-full md:w-2/3 p-5">
                         <h2 class="text-3xl font-bold mb-3">
-                            Pokedex App
+                            oFig - site e-commerce
                         </h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat odio dolor obcaecati
                             tempora officia quibusdam explicabo magnam cumque ipsum consectetur reiciendis odit, id
                             minus soluta quo modi non praesentium temporibus?</p>
                         <div class="mt-8 font-semibold text-white flex items-center gap-2">
-                            <a href="#" class="project-link bg-primary">
+                            <a href="https://github.com/lenny-zanotelli/oFig-ecommerce" class="project-link bg-primary">
                                 <img class="w-5 h-5" src="src/assets/images/stack-icon/github.svg" target="_blank"
                                     alt="github">
                                 github
                             </a>
-                            <a href="#" class="project-link bg-primary-gray dark:bg-primary-black">
+                            <!-- <a href="#" class="project-link bg-primary-gray dark:bg-primary-black">
                                 <img class="w-5 h-5" src="src/assets/images/stack-icon/web.svg" target="_blank"
                                     alt="website">
                                 website
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                 </li </ul>
@@ -247,7 +251,7 @@
     <footer class="w-full text-center mt-4 bg-cyan-50/80 dark:bg-primary-gray">
         <!-- Contact Section -->
         <section id="contact" class="flex flex-col gap-12 justify-center items-center py-20">
-            <h2 class="text-4xl md:text-5xl font-bold text-primary">
+            <h2 class="text-4xl md:text-5xl font-bold text-primary dark:text-primary-darkDefault">
                 Contact
             </h2>
             <div class="flex flex-wrap justify-center gap-5 md:gap-10">
