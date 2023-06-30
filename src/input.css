@@ -57,6 +57,7 @@
         @apply
             grid items-center
             grid-cols-1 md:grid-cols-2
+            gap-1
             pt-28 md:pt-0
             md:h-screen
             md:overflow-hidden
