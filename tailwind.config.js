@@ -16,21 +16,20 @@ module.exports = {
     extend: {
       colors: {
         dark: {
-          appBg: '#201320',
-          cardBg: '#201320',
-          buttonBg: '#351A35',
-          text: '#F4D4F4',
-          hover: '#451D47',
-          border: '#5E3061',
+          appBg: '#0B161A',
+          cardBg: '#101B20',
+          buttonBg: '#082C36',
+          text: '#B6ECF7',
+          hover: '#003848',
+          border: '#045468',
         },
         light: {
-          appBg: '#FDF7FD',
-          cardBg: '#FDF7FD',
-          buttonBg: '#FBEBFB',
-          text: '#53195D',
-          hover: '#F7DEF8',
-          border: '#E9C2EC',
-
+          appBg: '#FAFDFE',
+          cardBg: '#F2FAFB',
+          buttonBg: '#DEF7F9',
+          text: '#0D3C48',
+          hover: '#003848',
+          border: '#9DDDE7',
         },
 
       }
