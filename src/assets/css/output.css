@@ -741,7 +741,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-primary:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(0 56 72 / var(--tw-bg-opacity));
+  background-color: rgb(202 241 246 / var(--tw-bg-opacity));
 }
 
 :is(.dark .btn-primary){
@@ -888,7 +888,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .project-link:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(0 56 72 / var(--tw-bg-opacity));
+  background-color: rgb(202 241 246 / var(--tw-bg-opacity));
 }
 
 :is(.dark .project-link){

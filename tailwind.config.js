@@ -28,7 +28,7 @@ module.exports = {
           cardBg: '#F2FAFB',
           buttonBg: '#DEF7F9',
           text: '#0D3C48',
-          hover: '#003848',
+          hover: '#CAF1F6',
           border: '#9DDDE7',
         },
 
