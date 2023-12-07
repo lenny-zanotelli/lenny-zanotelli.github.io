@@ -15,13 +15,24 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: {
-          DEFAULT: '#00555C',
-          black: '#222831',
-          gray: '#393E46',
-          white: '#EEEEEE',
-          darkDefault: '#b8d9db'
-        }
+        dark: {
+          appBg: '#201320',
+          cardBg: '#201320',
+          buttonBg: '#351A35',
+          text: '#F4D4F4',
+          hover: '#451D47',
+          border: '#5E3061',
+        },
+        light: {
+          appBg: '#FDF7FD',
+          cardBg: '#FDF7FD',
+          buttonBg: '#FBEBFB',
+          text: '#53195D',
+          hover: '#F7DEF8',
+          border: '#E9C2EC',
+
+        },
+
       }
     },
   },

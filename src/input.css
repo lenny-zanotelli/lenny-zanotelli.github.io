@@ -19,8 +19,8 @@
     body {
         font-family: 'Nunito', sans-serif;
         @apply
-        bg-white dark:bg-primary-black
-        text-primary-black dark:text-primary-white
+        bg-light-appBg dark:bg-dark-appBg
+        text-light-text dark:text-dark-text
     }
     h1, h2, h3, h4, h5, h6 {
         font-family: 'Open-Sans', sans-serif;
@@ -31,7 +31,8 @@
     .nav {
         @apply
             fixed top-0 left-0 z-40
-            bg-cyan-50/80 dark:bg-primary-gray/80
+            bg-light-appBg/80 dark:bg-dark-appBg/80
+            border-b-2 border-light-border dark:border-dark-border
             py-3 md:py-0
             w-full backdrop-blur
     }
@@ -42,7 +43,7 @@
             items-center gap-8 md:gap-12
             pt-28 pb-8 md:p-0
             w-full md:w-auto
-            bg-white dark:bg-primary-gray
+            bg-light-appBg dark:bg-dark-appBg
             md:bg-transparent md:dark:bg-transparent
             transition duration-500
             shadow-lg md:shadow-none
@@ -51,7 +52,7 @@
         @apply 
             font-semibold
             border-b-4 border-transparent
-            hover:border-primary hover:dark:border-primary-darkDefault
+            hover:border-light-text hover:dark:border-dark-text
     }
     .home-section {
         @apply
@@ -64,15 +65,15 @@
     }
     .btn-primary {
         @apply
-            bg-primary
-            hover:brightness-110
-            font-bold text-white
+            bg-light-buttonBg dark:bg-dark-buttonBg
+            hover:bg-light-hover hover:dark:bg-dark-hover
+            font-bold text-light-text dark:text-dark-text
             px-4 py-2.5
             rounded shadow-lg
     }
     .container-hero-image {
         @apply
-            bg-primary
+            bg-dark-appBg
             rounded-md md:rounded-none
             h-60 md:h-full
             overflow-hidden
@@ -93,7 +94,7 @@
             absolute top-full
             opacity-100 md:opacity-0
             w-max px-3 py-2 mt-3
-            bg-white dark:bg-primary-gray
+            bg-light-cardBg dark:bg-dark-cardBg
             rounded md:shadow-md transition
 
     }
@@ -105,7 +106,7 @@
         @apply
             text-4xl md:text-5xl
             text-center
-            text-primary md:text-left dark:text-primary-darkDefault
+            text-light-text md:text-left dark:text-dark-text
             font-bold
             mb-8 md:mb-12
     }
@@ -113,7 +114,7 @@
         @apply
             flex flex-col md:flex-row
             items-center
-            bg-white dark:bg-primary-gray
+            bg-light-cardBg dark:bg-dark-cardBg
             rounded overflow-hidden
     }
 
@@ -121,7 +122,9 @@
         @apply
             flex items-center gap-2
             py-4 px-2
-            w-max hover:brightness-110
+            text-light-text dark:text-dark-text
+            w-max hover:bg-light-hover dark:hover:bg-dark-hover
+            bg-light-buttonBg dark:bg-dark-buttonBg rounded
     }
     .contact-link {
         @apply 

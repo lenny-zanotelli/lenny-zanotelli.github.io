@@ -13,7 +13,7 @@ toggleMenu.addEventListener('click', ()=> {
 
 const navLinks = document.querySelectorAll('.nav-link');
 for(const navlink of navLinks) {
-    navlink.addEventListener('click', ()=>{
+    navlink.addEventListener('click', () => {
         menuElem.classList.remove('translate-y-[-200%]');
         changeMenuIcon();
     });
@@ -33,6 +33,8 @@ function changeMenuIcon() {
 const html = document.querySelector('html');
 const toggleTheme = document.getElementById('toggle-theme');
 const toggleThemeIcon = toggleTheme.querySelector('img');
+const toggleWebsiteIcon = document.querySelector('.website');
+console.log(toggleWebsiteIcon);
 toggleThemeIcon.addEventListener('click', ()=>{
     html.classList.toggle('dark');
     const isDark = html.classList.contains('dark');
