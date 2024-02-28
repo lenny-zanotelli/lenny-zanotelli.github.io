@@ -4,7 +4,6 @@ const ICON_DARK_MODE = 'src/assets/images/icon/icon-dark.svg';
 const ICON_LIGHT_MODE = 'src/assets/images/icon/icon-light.svg'
 
 // Toogle Menu
-
 const toggleMenu = document.getElementById('toggle-menu');
 const toggleMenuIcon = toggleMenu.querySelector('img');
 const menuElem = document.getElementById('menu');
