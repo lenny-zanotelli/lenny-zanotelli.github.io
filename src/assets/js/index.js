@@ -1,3 +1,8 @@
+const ICON_MENU_CLOSE = "src/assets/images/icon/icon-menu-close.svg";
+const ICON_MENU = "src/assets/images/icon/icon-menu.svg";
+const ICON_DARK_MODE = 'src/assets/images/icon/icon-dark.svg';
+const ICON_LIGHT_MODE = 'src/assets/images/icon/icon-light.svg'
+
 // Toogle Menu
 
 const toggleMenu = document.getElementById('toggle-menu');
@@ -22,9 +27,9 @@ for(const navlink of navLinks) {
 function changeMenuIcon() {
     const isContainTranslate = menuElem.classList.contains('translate-y-[-200%]');
     if(!isContainTranslate) {
-        toggleMenuIcon.src = 'src/assets/images/icon/icon-menu-close.svg'
+        toggleMenuIcon.src = ICON_MENU_CLOSE;
     }else{
-        toggleMenuIcon.src = 'src/assets/images/icon/icon-menu.svg'
+        toggleMenuIcon.src = ICON_MENU;
     }
 }
 
@@ -34,15 +39,14 @@ const html = document.querySelector('html');
 const toggleTheme = document.getElementById('toggle-theme');
 const toggleThemeIcon = toggleTheme.querySelector('img');
 const toggleWebsiteIcon = document.querySelector('.website');
-console.log(toggleWebsiteIcon);
 toggleThemeIcon.addEventListener('click', ()=>{
     html.classList.toggle('dark');
     const isDark = html.classList.contains('dark');
     if(!isDark){
-        toggleThemeIcon.src = 'src/assets/images/icon/icon-dark.svg'
+        toggleThemeIcon.src = ICON_DARK_MODE;
         // TODO : changer aussi les icones du Contact/des projets et de l'icone en haut
     }else{
-        toggleThemeIcon.src = 'src/assets/images/icon/icon-light.svg'
+        toggleThemeIcon.src = ICON_LIGHT_MODE;
     }
 })
 
